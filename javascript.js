@@ -1,10 +1,6 @@
-<script>
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-            });
-        </script>
+document.getElementById('searchButton').addEventListener('click', function() {
+    search(document.getElementById('searchInput').value);
+});
+
+function search(word) {
+   }

@@ -16,6 +16,10 @@
             </nav>
         </header>
         <main>
+            <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Enter a word">
+            <button id="searchButton">Search</button>
+        </div>
             <section id="Home">
                 <div class="section-inner">
                  <h1>simple website page</h1>
@@ -48,10 +52,20 @@
                     <h2>About</h2>
                     <p>This Content will tells you about the mahabharatham fight between brothers of kavurauvs and pandavs it describe the values and moral values of the humans</p>
                                                        </div>
+ <div id="meanings"></div>
             </section>
         </main>
         <footer>
             © Copyright Sai kolloju , 2023
         </footer>
+
+<script src="javascript.js">
+document.getElementById('searchButton').addEventListener('click', function() {
+    searchword(document.getElementById('searchInput').value);
+});
+
+function searchword(word) {
+   }
+</script>
     </body>
 </html>
